@@ -1,4 +1,4 @@
-# Instrucción turning / Templates
+# Instrucción tunning / Templates
 Usar plantillas fijas de [instrucciones optimizadas](https://www.ibm.com/es-es/think/topics/instruction-tuning). Algunas fuentes para consular:
 
 ---
