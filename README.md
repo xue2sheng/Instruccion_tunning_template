@@ -1,49 +1,15 @@
 # Instrucción tunning / Templates
-Usar plantillas fijas de [instrucciones optimizadas](https://www.ibm.com/es-es/think/topics/instruction-tuning). Algunas fuentes para consular:
+Usar plantillas fijas de [instrucciones optimizadas](https://www.ibm.com/es-es/think/topics/instruction-tuning)
 
----
-**1. IBM – Instruction Tuning**
-- **Enlace:** [IBM – Instruction Tuning](https://www.ibm.com/es-es/think/topics/instruction-tuning)
-- **Descripción:** Explica el concepto de instruction tuning, cómo estructurar prompts y ejemplos para datasets de entrenamiento, incluyendo clasificación, extracción y generación de texto.
-
----
-**2. Hugging Face – Datasets y Prompt Engineering**
-- **Enlace:** [Hugging Face Datasets](https://huggingface.co/docs/datasets/)
-- **Descripción:** La documentación de Hugging Face incluye ejemplos de cómo estructurar datasets para fine-tuning, con plantillas para tareas como clasificación, QA, y generación de texto.
-
----
-**3. Google – Prompt Engineering Guide**
-- **Enlace:** [Google – Prompt Engineering Guide](https://ai.google.dev/docs/prompt_guide)
-- **Descripción:** Guía práctica sobre cómo diseñar prompts efectivos, con ejemplos de instrucciones claras y respuestas esperadas, aplicables a múltiples idiomas.
-
----
-**4. Papers With Code – Instruction Tuning**
-- **Enlace:** [Papers With Code – Instruction Tuning](https://paperswithcode.com/method/instruction-tuning)
-- **Descripción:** Recopila papers y ejemplos de instruction tuning, incluyendo datasets públicos y estructuras de prompts para diferentes tareas de NLP.
-
----
-**5. Stanford NLP – Datasets y Ejemplos**
-- **Enlace:** [Stanford NLP](https://nlp.stanford.edu/)
-- **Descripción:** Ofrece recursos y ejemplos de cómo estructurar datos para entrenamiento supervisado, con énfasis en consistencia y evaluación automática.
-
----
-**6. GitHub – Datasets para Fine-Tuning**
-- **Ejemplo:** [Datasets de Hugging Face en GitHub](https://github.com/huggingface/datasets)
-- **Descripción:** Repositorios con datasets estructurados para fine-tuning, incluyendo ejemplos en español y otros idiomas.
-
----
-**7. ArXiv – Papers sobre Instruction Tuning**
-- **Ejemplo:** [FLAN: Scaling Instruction-Finetuned Language Models](https://arxiv.org/abs/2109.01652)
-- **Descripción:** Paper que detalla cómo estructurar instrucciones y ejemplos para mejorar el rendimiento de modelos de lenguaje.
-
----
-
-### Plantilla general
+## Plantilla general
 Esquema para construir ejemplos consistentes en el dataset:
 
 - Tarea: Describe de forma breve y accionable lo que debe hacer el modelo.  
 - Datos: Proporciona el contenido de entrada necesario para cumplir la tarea.  
 - Respuesta esperada: Muestra exactamente el formato y el contenido objetivo que el modelo debería producir.
+
+
+# Ejemplos
 
 ### Ejemplo 1 (clasificación)
 - Tarea: Clasifica el sentimiento del texto como “positivo”, “negativo” o “neutro”.  
@@ -74,11 +40,7 @@ Esquema para construir ejemplos consistentes en el dataset:
 - Mantener campos estables (“Tarea”, “Datos”, “Respuesta esperada”) facilita el entrenamiento supervisado y las evaluaciones automáticas.  
 - Para datasets conversacionales, se puede mapear “Tarea” a rol sistema/usuario, “Datos” a contenido del usuario y “Respuesta esperada” al contenido del asistente, preservando el formato requerido por el modelo.
 
-## Ejemplos extras
-
-¡Excelente! Aquí tienes más ejemplos de **prompts de instrucción tuning** y **plantillas** en español, organizados por tipo de tarea y con variaciones útiles para datasets de entrenamiento. Incluyo también ejemplos para contextos conversacionales y tareas más complejas.
-
----
+# Ejemplos extras
 
 ## **1. Plantillas para Tareas Específicas**
 
@@ -173,6 +135,46 @@ Esquema para construir ejemplos consistentes en el dataset:
 - **Consistencia:** Usar siempre los mismos campos (“Tarea”, “Datos”, “Respuesta esperada”) facilita el entrenamiento y la evaluación.
 - **Variedad:** Incluir ejemplos con errores comunes (ej: respuestas fuera de formato) ayuda a robustecer el modelo.
 - **Contexto:** Para tareas conversacionales, añadir el historial de la conversación como parte de “Datos” mejora la coherencia.
+
+# Fuentes
+---
+**1. IBM – Instruction Tuning**
+- **Enlace:** [IBM – Instruction Tuning](https://www.ibm.com/es-es/think/topics/instruction-tuning)
+- **Descripción:** Explica el concepto de instruction tuning, cómo estructurar prompts y ejemplos para datasets de entrenamiento, incluyendo clasificación, extracción y generación de texto.
+
+---
+**2. Hugging Face – Datasets y Prompt Engineering**
+- **Enlace:** [Hugging Face Datasets](https://huggingface.co/docs/datasets/)
+- **Descripción:** La documentación de Hugging Face incluye ejemplos de cómo estructurar datasets para fine-tuning, con plantillas para tareas como clasificación, QA, y generación de texto.
+
+---
+**3. Google – Prompt Engineering Guide**
+- **Enlace:** [Google – Prompt Engineering Guide](https://ai.google.dev/docs/prompt_guide)
+- **Descripción:** Guía práctica sobre cómo diseñar prompts efectivos, con ejemplos de instrucciones claras y respuestas esperadas, aplicables a múltiples idiomas.
+
+---
+**4. Papers With Code – Instruction Tuning**
+- **Enlace:** [Papers With Code – Instruction Tuning](https://paperswithcode.com/method/instruction-tuning)
+- **Descripción:** Recopila papers y ejemplos de instruction tuning, incluyendo datasets públicos y estructuras de prompts para diferentes tareas de NLP.
+
+---
+**5. Stanford NLP – Datasets y Ejemplos**
+- **Enlace:** [Stanford NLP](https://nlp.stanford.edu/)
+- **Descripción:** Ofrece recursos y ejemplos de cómo estructurar datos para entrenamiento supervisado, con énfasis en consistencia y evaluación automática.
+
+---
+**6. GitHub – Datasets para Fine-Tuning**
+- **Ejemplo:** [Datasets de Hugging Face en GitHub](https://github.com/huggingface/datasets)
+- **Descripción:** Repositorios con datasets estructurados para fine-tuning, incluyendo ejemplos en español y otros idiomas.
+
+---
+**7. ArXiv – Papers sobre Instruction Tuning**
+- **Ejemplo:** [FLAN: Scaling Instruction-Finetuned Language Models](https://arxiv.org/abs/2109.01652)
+- **Descripción:** Paper que detalla cómo estructurar instrucciones y ejemplos para mejorar el rendimiento de modelos de lenguaje.
+
+---
+
+
 
 
 
