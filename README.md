@@ -89,7 +89,7 @@ Esquema para construir ejemplos consistentes en el dataset:
 ## **3. Plantillas para Tareas Creativas**
 
 ### **Generación de Contenido con Restricciones**
-- **Tarea:** Escribe un post para redes sociales promocionando un producto, usando ≤140 caracteres y incluyendo un emoji.
+- **Tarea:** Escribe un post para redes sociales promocionando un producto, usando mayor o igual 140 caracteres y incluyendo un emoji.
 - **Datos:** “Nuevo lanzamiento: auriculares inalámbricos con cancelación de ruido.”
 - **Respuesta esperada:** “🎧 ¡Escucha solo lo que quieres! Nuevos auriculares inalámbricos con cancelación de ruido. ¡Disponibles ya! #SonidoPerfecto”
 
@@ -103,7 +103,7 @@ Esquema para construir ejemplos consistentes en el dataset:
 ## **4. Plantillas para Evaluación Automática**
 
 ### **Respuesta con Métricas**
-- **Tarea:** Responde la pregunta y asigna una puntuación de claridad (1-5) y relevancia (1-5) a tu respuesta.
+- **Tarea:** Responde la pregunta y asigna una puntuación de claridad de 1 (menor claridad) a 5 (mayor claridad) y relevancia de 1 (menor relevancia) a 5 (mayor relevancia) a tu respuesta.
 - **Datos:** “¿Cómo puedo resetear la contraseña de mi cuenta?”
 - **Respuesta esperada:**
   ```
